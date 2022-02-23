@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Ola Mundo</title>
+</head>
+<body>
+    <div>Hello World</div>
+</body>
+
+</html>
+
+<!-- <script>window.alert("Olá Mundo")</script> -->
+
+
+<script>
+/* Declare a função 'minhaFunção' */
+function minhaFuncao(objeto) {
+   objeto.marca = "Toyota";
+ }
+
+ /*
+  * Declare a variável 'meucarro';
+  * crie e inicialize um novo Objeto;
+  * atribua referência para 'meucarro'
+  */
+ var meucarro = {
+   marca: "Honda",
+   modelo: "Accord",
+   ano: 1998
+ };
+
+ /* Exibe 'Honda' */
+ window.prompt(meucarro.marca);
+ window.alert(meucarro.modelo);
+ window.prompt(meucarro.ano);
+ /* Passe a referência do objeto para a função */
+ minhaFuncao(meucarro);
+
+ /*
+  * Exibe 'Toyota' como valor para a propriedade 'marca'
+  * do objeto, mudado pela função.
+  */
+ window.alert(meucarro.marca);
+ console.log(meucarro.modelo);
+</script>
